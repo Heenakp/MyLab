@@ -12,7 +12,7 @@ pipeline{
        GroupId = readMavenPom().getGroupId()
     }
 
-    stages {
+    stages {  
         // Specify various stage with in stages
 
         // stage 1. Build
@@ -45,9 +45,10 @@ pipeline{
             steps {
                 echo 'deploying'
                 }
+       }
+    }
 
-            }
-        }
+}
 
         
         
